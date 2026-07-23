@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cir6u1l3beawb"]
+
+[ext_resource type="Texture2D" uid="uid://bfgbjkh8a5wha" path="res://assets/sprites/placeholder/screen_size_template.png" id="1_erqjc"]
+[ext_resource type="Script" uid="uid://chhqpplfljuiy" path="res://scripts/screen.gd" id="2_gakxr"]
+
+[node name="Screen" type="Sprite2D"]
+texture = ExtResource("1_erqjc")
+script = ExtResource("2_gakxr")

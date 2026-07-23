@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbtt0oh6e1uw2"]
+
+[ext_resource type="Script" uid="uid://bi2iaaj6wny1a" path="res://scripts/gameloop.gd" id="1_uwrxv"]
+[ext_resource type="Texture2D" uid="uid://ncankmuxcylp" path="res://assets/sprites/placeholder/desk_computer.png" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://cir6u1l3beawb" path="res://scenes/screen.tscn" id="3_lnu2h"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_uwrxv")
+
+[node name="DeskComputer" type="Sprite2D" parent="."]
+position = Vector2(160, 90)
+texture = ExtResource("2_yqjtg")
+
+[node name="Screen" parent="." instance=ExtResource("3_lnu2h")]
+position = Vector2(160, 82.5)
+
+[node name="ScreenRootPos" type="Node2D" parent="."]
+position = Vector2(160, 82.5)
